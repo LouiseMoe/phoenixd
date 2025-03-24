@@ -17,7 +17,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: "louisemoe/phoenixd"
+  IMAGE_NAME: ${{ github.repository }}
   PHOENIXD_VERSION: "0.5.1"
 
 jobs:
