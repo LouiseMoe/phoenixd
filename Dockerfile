@@ -11,7 +11,7 @@ RUN chmod +x /app/phoenixd
 
 FROM debian:bookworm-slim AS runtime
 
-RUN apt update && apt upgrade -y
+RUN apt update && apt upgrade -y && apt install -y ca-certificates
 RUN adduser phoenix --uid 1000 --home /phoenix
 USER phoenix:phoenix
 
