@@ -1,0 +1,8 @@
+services:
+  phoenixd:
+    image: ghcr.io/louisemoe/phoenixd:0.5.1
+    volumes:
+      # The data directory must be created before running the container (aka `mkdir data` so the owner is the current user)
+      - ./data:/phoenix/.phoenix
+    ports:
+      - 9740:9740
